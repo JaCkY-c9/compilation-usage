@@ -49,3 +49,13 @@ rm -rf ./tmp && rm -rf .config
 make menuconfig
 make -j$(($(nproc) + 1)) V=s
 编译完成后输出路径：bin/targets
+
+插件源
+
+#src/gz openwrt_core https://op.supes.top/targets/x86/64/packages
+src/gz openwrt_base https://op.supes.top/packages/x86_64/base
+src/gz openwrt_custom https://op.supes.top/packages/x86_64
+src/gz openwrt_luci https://op.supes.top/packages/x86_64/luci
+src/gz openwrt_packages https://op.supes.top/packages/x86_64/packages
+src/gz openwrt_routing https://op.supes.top/packages/x86_64/routing
+
