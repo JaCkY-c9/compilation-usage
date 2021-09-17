@@ -22,6 +22,14 @@ wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/applicatio
 mkdir -p package/parted && \
 wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/Parted.Makefile -O package/parted/Makefile 
 
+#修改dockerman 官源有dockerman 增加dockerman2
+
+
+https://github.com/lisaac/luci-app-dockerman.git ？？？？
+
+
+
+
 # Update the feeds
 ./scripts/feeds update -a
 ./scripts/feeds install -a
