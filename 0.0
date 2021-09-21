@@ -30,6 +30,18 @@ https://github.com/lisaac/luci-app-dockerman.git ？？？？
 
 
 
+#单独添加软件包（可选项）
+如果需要单独添加软件，请拉取源码到 pack­age 目录之下。示例如下：
+
+# 添加 OpenAppFilter 应用过滤插件
+git clone https://github.com/destan19/OpenAppFilter package/OpenAppFilter
+
+
+
+
+
+
+
 # Update the feeds
 ./scripts/feeds update -a
 ./scripts/feeds install -a
