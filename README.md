@@ -3,14 +3,14 @@
 然后输入 sudo apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git libncurses5-dev libz-dev patch python3 python2.7 unzip zlib1g-dev lib32gcc1 libc6-dev-i386 subversion flex uglifyjs git-core gcc-multilib p7zip p7zip-full msmtp libssl-dev texinfo libglib2.0-dev xmlto qemu-utils upx libelf-dev autoconf automake libtool autopoint device-tree-compiler g++-multilib antlr3 gperf wget curl swig rsync 
 
 # Download and update the sources
-git clone https://git.openwrt.org/openwrt/openwrt.git openwrt
-cd openwrt
-git pull
+  git clone https://git.openwrt.org/openwrt/openwrt.git openwrt
+  cd openwrt
+  git pull
  
 # Select a specific code revision
-git branch -a
-git tag
-git checkout v19.07.8
+  git branch -a
+  git tag
+  git checkout v19.07.8
 
 # 增加配置
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default（编译不成）
