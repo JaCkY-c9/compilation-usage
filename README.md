@@ -1,6 +1,6 @@
 # 首先装好 Ubuntu 64bit，推荐 Ubuntu 20.04 LTS x64 
-命令行输入 sudo apt-get update 
-然后输入 sudo apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git libncurses5-dev libz-dev patch python3 python2.7 unzip zlib1g-dev lib32gcc1 libc6-dev-i386 subversion flex uglifyjs git-core gcc-multilib p7zip p7zip-full msmtp libssl-dev texinfo libglib2.0-dev xmlto qemu-utils upx libelf-dev autoconf automake libtool autopoint device-tree-compiler g++-multilib antlr3 gperf wget curl swig rsync 
+# 命令行输入 sudo apt-get update 
+  然后输入 sudo apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git libncurses5-dev libz-dev   patch python3 python2.7 unzip zlib1g-dev lib32gcc1 libc6-dev-i386 subversion flex uglifyjs git-core gcc-multilib     p7zip p7zip-full msmtp libssl-dev texinfo libglib2.0-dev xmlto qemu-utils upx libelf-dev autoconf automake libtool   autopoint device-tree-compiler g++-multilib antlr3 gperf wget curl swig rsync
 
 # Download and update the sources
   git clone https://github.com/openwrt/openwrt.git openwrt
@@ -13,15 +13,15 @@
   git checkout v19.07.8
 
 # 增加配置
-#echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default（编译不成）
-echo 'src-git chajian https://github.com/jack987-cloud/packages-diy.git' >>feeds.conf.default
-echo 'src-git openclash https://github.com/vernesong/OpenClash.git' >>feeds.conf.default
+  #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default（编译不成） 
+  echo 'src-git chajian https://github.com/jack987-cloud/packages-diy.git' >>feeds.conf.default
+  echo 'src-git openclash https://github.com/vernesong/OpenClash.git' >>feeds.conf.default
 
 # 添加diskman
-mkdir -p package/luci-app-diskman && \
-wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/applications/luci-app-diskman/Makefile -O package/luci-app-diskman/Makefile
-mkdir -p package/parted && \
-wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/Parted.Makefile -O package/parted/Makefile 
+  mkdir -p package/luci-app-diskman && \
+  wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/applications/luci-app-diskman/Makefile -O     package/luci-app-diskman/Makefile
+  mkdir -p package/parted && \
+  wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/Parted.Makefile -O package/parted/Makefile 
 
 # 修改dockerman 官源有dockerman 增加dockerman2
 
